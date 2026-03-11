@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#135bec",
+              "background-light": "#f6f6f8",
+              "background-dark": "#000000", // Adjusted to black per user request while keeping theme structure
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #000000;
+        }
+        .video-container:hover .play-button {
+            transform: scale(1.1);
+            background-color: rgba(255, 255, 255, 0.9);
+            color: #000000;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display text-slate-100 bg-background-dark selection:bg-primary selection:text-white">
+<!-- [GNB]: Sticky Top -->
+<nav class="sticky top-0 z-50 w-full bg-background-dark/80 backdrop-blur-md border-b border-white/5 px-6 py-4">
+<div class="max-w-7xl mx-auto flex items-center justify-between">
+<div class="flex items-center">
+<a class="text-xl font-black tracking-tighter text-white" href="#">SYSTEM SEOUL</a>
+</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-xs font-medium tracking-widest text-slate-400 hover:text-white transition-colors uppercase" href="#">Home</a>
+<a class="text-xs font-medium tracking-widest text-white border-b border-primary pb-1 transition-colors uppercase" href="#">Video</a>
+<a class="text-xs font-medium tracking-widest text-slate-400 hover:text-white transition-colors uppercase" href="#">Tour</a>
+<a class="text-xs font-medium tracking-widest text-slate-400 hover:text-white transition-colors uppercase" href="#">Contact</a>
+<a class="text-xs font-medium tracking-widest text-slate-400 hover:text-white transition-colors uppercase" href="#">Social</a>
+</div>
+<div class="md:hidden">
+<span class="material-symbols-outlined text-white">menu</span>
+</div>
+</div>
+</nav>
+<!-- Content Wrapper -->
+<main class="max-w-4xl mx-auto px-4 py-16">
+<!-- [Page Title] -->
+<header class="text-center mb-20">
+<h1 class="text-6xl md:text-8xl font-black tracking-tighter text-white uppercase italic">VIDEO</h1>
+</header>
+<!-- [Video List] -->
+<div class="flex flex-col space-y-[60px]">
+<!-- Video Item 1 -->
+<div class="w-full max-w-[800px] mx-auto group">
+<div class="video-container relative aspect-video bg-zinc-900 overflow-hidden rounded-lg cursor-pointer border border-white/10">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Cinematic neon city lights reflected in rainy street" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAIhLZU3C9j1Y0YVlpgHZYZu6izWKgDKhBASquxZIF2iF0zMdTUzCTZM1J7bzZ7xx8UtdvOJqAXE2rwFBsYkOHvniiSward3gNb2HwHNz68v5x_Y9tg5TdafhALPH-xtucJcenxlpEyYiSx_qb0bZehM6spOYzGZ32l9ktt53U55_h0GjwISz9Y2aNfsigieSoJ_lBX49qcUXzJYynyb6ZZPB6Jn-ejIj_q_dnkqK6glp2wNjwC2MToypw63xzOr1x9F3Vg7vjxWegm');">
+<div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
+</div>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="play-button flex h-16 w-16 items-center justify-center rounded-full bg-white/10 text-white backdrop-blur-sm transition-all duration-300">
+<span class="material-symbols-outlined text-3xl fill-1">play_arrow</span>
+</div>
+</div>
+<!-- Custom progress bar overlay -->
+<div class="absolute bottom-0 left-0 w-full p-4 opacity-0 group-hover:opacity-100 transition-opacity">
+<div class="h-1 w-full bg-white/20 rounded-full">
+<div class="h-full w-1/3 bg-primary rounded-full"></div>
+</div>
+</div>
+</div>
+<p class="mt-4 text-xs font-medium tracking-widest text-slate-500 uppercase text-center">SYSTEM SEOUL - 너 (OFFICIAL VIDEO)</p>
+</div>
+<!-- Video Item 2 -->
+<div class="w-full max-w-[800px] mx-auto group">
+<div class="video-container relative aspect-video bg-zinc-900 overflow-hidden rounded-lg cursor-pointer border border-white/10">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Abstract distorted glitch textures in black and blue" style="background-image: url('');">
+<div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
+</div>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="play-button flex h-16 w-16 items-center justify-center rounded-full bg-white/10 text-white backdrop-blur-sm transition-all duration-300">
+<span class="material-symbols-outlined text-3xl fill-1">play_arrow</span>
+</div>
+</div>
+<div class="absolute bottom-0 left-0 w-full p-4 opacity-0 group-hover:opacity-100 transition-opacity">
+<div class="h-1 w-full bg-white/20 rounded-full">
+<div class="h-full w-0 bg-primary rounded-full"></div>
+</div>
+</div>
+</div>
+<p class="mt-4 text-xs font-medium tracking-widest text-slate-500 uppercase text-center">SYSTEM SEOUL - 그늘 (VISUALIZER)</p>
+</div>
+<!-- Video Item 3 -->
+<div class="w-full max-w-[800px] mx-auto group">
+<div class="video-container relative aspect-video bg-zinc-900 overflow-hidden rounded-lg cursor-pointer border border-white/10">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Silhouetted crowd at a dark underground concert venue" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBq-S6Eq3wGo1p6CrrihIH2deZUZJhqNJdJidYhK_kHK3LXhgJbmXTwsMDZVsoGTrpNxvt4GtsFUWbbwmMjMqS5cW3RlBTPIJk4DyAnOHDe264ffLOG8KdMNZWjBvxRS9PNDhD2rMKgY0dfx2A5plEuLIo7mgtj1jLbFdMxlifqxP7nJkZD8MSF4o9YNX9mnC2XCnWaR7ZrHY3MSj4AhpwK1GVephww-CjvmRcwiiG39F44b_MMDzYXG7vxDhLXlNgY6bKBMxEnKf_F');">
+<div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
+</div>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="play-button flex h-16 w-16 items-center justify-center rounded-full bg-white/10 text-white backdrop-blur-sm transition-all duration-300">
+<span class="material-symbols-outlined text-3xl fill-1">play_arrow</span>
+</div>
+</div>
+<div class="absolute bottom-0 left-0 w-full p-4 opacity-0 group-hover:opacity-100 transition-opacity">
+<div class="h-1 w-full bg-white/20 rounded-full">
+<div class="h-full w-0 bg-primary rounded-full"></div>
+</div>
+</div>
+</div>
+<p class="mt-4 text-xs font-medium tracking-widest text-slate-500 uppercase text-center">SYSTEM SEOUL - LIVE IN SEOUL (2025)</p>
+</div>
+</div>
+<!-- [Streaming Icon Bar] -->
+<div class="mt-32 flex justify-center items-center space-x-10 text-slate-500">
+<a class="hover:text-white transition-colors" href="#">
+<svg class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+</a>
+<a class="hover:text-white transition-colors" href="#">
+<svg class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg>
+</a>
+<a class="hover:text-white transition-colors" href="#">
+<svg class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm5.591 17.3c-.22.351-.664.457-1.012.234-2.822-1.724-6.375-2.114-10.558-1.16-.401.091-.803-.16-.893-.56-.091-.402.16-.803.56-.893 4.577-1.046 8.503-.6 11.666 1.334.349.223.455.667.237 1.015zm1.493-3.262c-.276.449-.863.591-1.311.314-3.225-1.982-8.142-2.557-11.956-1.4s-1.849.63-2.125.181-.144-.863.305-1.139c4.353-1.32 9.778-.679 13.473 1.591.448.275.59.863.314 1.312zm.129-3.41c-3.864-2.295-10.248-2.508-13.935-1.389-.593.18-1.221-.161-1.401-.753s.161-1.221.753-1.401c4.237-1.286 11.286-1.034 15.724 1.599.533.317.707 1.003.39 1.536s-1.002.71-1.531.408z"></path></svg>
+</a>
+<a class="hover:text-white transition-colors" href="#">
+<svg class="w-6 h-6" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 8c0 .557-.447 1.008-1 1.008s-1-.451-1-1.008.447-1.008 1-1.008 1 .451 1 1.008zm0 2h-2v6h2v-6zm3 0h-2v6h2v-2.625c0-1.035.84-1.875 1.875-1.875h.125v-1.5h-.125c-.966 0-1.75.784-1.875 1.75v.25z"></path></svg>
+</a>
+</div>
+</main>
+<!-- [Footer] -->
+<footer class="mt-20 pb-12 text-center">
+<div class="flex flex-col items-center space-y-4">
+<div class="text-[10px] tracking-[0.3em] text-slate-600 uppercase">
+                © 2026 미네랄 (MINERAL)
+            </div>
+<div class="flex space-x-6 text-[10px] tracking-widest text-slate-700 uppercase">
+<a class="hover:text-slate-400 transition-colors" href="#">Terms</a>
+<a class="hover:text-slate-400 transition-colors" href="#">Privacy</a>
+</div>
+</div>
+</footer>
+<!-- Bottom Mobile Nav -->
+<div class="fixed bottom-0 left-0 w-full md:hidden bg-background-dark/95 border-t border-white/5 backdrop-blur-lg px-6 py-4 flex justify-between items-center z-50">
+<a class="text-slate-500" href="#"><span class="material-symbols-outlined">home</span></a>
+<a class="text-primary" href="#"><span class="material-symbols-outlined">play_circle</span></a>
+<a class="text-slate-500" href="#"><span class="material-symbols-outlined">event</span></a>
+<a class="text-slate-500" href="#"><span class="material-symbols-outlined">mail</span></a>
+<a class="text-slate-500" href="#"><span class="material-symbols-outlined">share</span></a>
+</div>
+</body></html>

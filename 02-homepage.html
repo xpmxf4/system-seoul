@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#135bec",
+                        "background-light": "#000000",
+                        "background-dark": "#000000",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.7) 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-dark text-slate-100 selection:bg-primary selection:text-white">
+<!-- GNB: Sticky Top -->
+<nav class="sticky top-0 z-50 w-full bg-background-dark/80 backdrop-blur-md border-b border-white/5">
+<div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+<h1 class="text-xl font-black tracking-tighter uppercase text-slate-100">SYSTEM SEOUL</h1>
+<button class="p-2 hover:bg-white/10 rounded-lg transition-colors">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+</div>
+</nav>
+<!-- Hero Section: 100vh -->
+<section class="relative h-[calc(100vh-64px)] w-full overflow-hidden flex items-center justify-center">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-60 grayscale" data-alt="Moody dark cinematic stage lighting with smoke" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAQ7-8beqy3Ev_DXN13QJux8_7HrRNVB1x8i-0jiTQAFxzDyaolpwZfn1jor9fYz9abs_fG40UGXOweaUfFQTDyOs2MbLUGq0q4bAbM6Ifl9Nj2-f3O0BjUFmexgXhq5pG271UlgJQrcnCD3CRApGqVCGi3fIwN59YbSPpu_N9nwx9sLvQz0Y5baNYIgpP8e33xoSdCnnmWWmBpcqC8CgOkGKpCyZZ6Zl4Pxc9DLMKEL3somy7Fwmm1VzrRUF-I8tIoXKHS4hFntKm"/>
+<div class="absolute inset-0 hero-gradient"></div>
+</div>
+<div class="relative z-10 text-center px-4">
+<h2 class="text-7xl md:text-9xl font-black tracking-tighter mb-4 animate-pulse">SS-POP 2</h2>
+<p class="text-sm md:text-base font-medium tracking-[0.5em] uppercase text-slate-400 opacity-80">New Album Out Now</p>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-50">
+<span class="material-symbols-outlined text-3xl">keyboard_double_arrow_down</span>
+</div>
+</section>
+<!-- Streaming Bar: Monochrome Icons -->
+<section class="py-12 border-y border-white/5 bg-background-dark">
+<div class="max-w-5xl mx-auto px-6">
+<p class="text-center text-[10px] uppercase tracking-[0.3em] text-slate-500 mb-8 font-bold">Available On</p>
+<div class="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-70 hover:opacity-100 transition-opacity">
+<a class="hover:text-primary transition-colors flex flex-col items-center gap-2 group" href="#">
+<span class="material-symbols-outlined text-2xl">photo_camera</span>
+<span class="text-[10px] font-bold group-hover:text-white">IG</span>
+</a>
+<a class="hover:text-primary transition-colors flex flex-col items-center gap-2 group" href="#">
+<span class="material-symbols-outlined text-2xl">play_circle</span>
+<span class="text-[10px] font-bold group-hover:text-white">YT</span>
+</a>
+<a class="hover:text-primary transition-colors flex flex-col items-center gap-2 group" href="#">
+<span class="material-symbols-outlined text-2xl">music_note</span>
+<span class="text-[10px] font-bold group-hover:text-white">YTM</span>
+</a>
+<a class="hover:text-primary transition-colors flex flex-col items-center gap-2 group" href="#">
+<span class="material-symbols-outlined text-2xl">radio</span>
+<span class="text-[10px] font-bold group-hover:text-white">SP</span>
+</a>
+<a class="hover:text-primary transition-colors flex flex-col items-center gap-2 group" href="#">
+<span class="material-symbols-outlined text-2xl">brand_awareness</span>
+<span class="text-[10px] font-bold group-hover:text-white">AM</span>
+</a>
+<a class="hover:text-primary transition-colors flex flex-col items-center gap-2 group" href="#">
+<span class="material-symbols-outlined text-2xl">cloud</span>
+<span class="text-[10px] font-bold group-hover:text-white">SC</span>
+</a>
+<a class="hover:text-primary transition-colors flex flex-col items-center gap-2 group" href="#">
+<span class="material-symbols-outlined text-2xl">water_drop</span>
+<span class="text-[10px] font-bold group-hover:text-white">ML</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Content Preview (Minimalist Vibe) -->
+<section class="py-24 px-6 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="aspect-square bg-slate-900 overflow-hidden rounded-lg group">
+<img class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-110" data-alt="Abstract black and white minimalist art" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7CQvvry7v4kek69Y25Lshjz-rRMBdzvSt0G_CkkBt_In44Z1ZbY6V4rsO44G7NN7lJdLJ_QDvFHkWsIN5anLXSoYCD7PAQsCksCUVBsoezYTvOWdndVaSXLnpPTf0X-Pvd1Inzs6w9CK0EAN7tcgqkOXl0iYi1KfphkEQjUSoQpscln2bORnjS7oWK0qknDog5gH7mrqsAOUwab3Ugl8EfpNqzNfUxv9OrBi5_BDUKiGas-rnNTlU7TOZ8PBQAxGYF3NtI1G-9t-o"/>
+</div>
+<div class="flex flex-col justify-center space-y-6">
+<h3 class="text-4xl font-bold tracking-tight">The Seoul Sound.</h3>
+<p class="text-slate-400 leading-relaxed text-lg">
+                System Seoul returns with SS-POP 2. An exploration of urban loneliness and electric euphoria. 
+                Recorded in the heart of the city, inspired by the neon and the concrete.
+            </p>
+<div class="pt-4">
+<button class="bg-primary hover:bg-primary/80 text-white px-8 py-4 rounded-full font-bold uppercase tracking-widest text-sm transition-all transform hover:-translate-y-1">
+                    Listen Now
+                </button>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="mt-auto py-12 px-6 border-t border-white/5">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+<p class="text-slate-500 text-xs font-medium tracking-wider uppercase">© 2026 미네랄</p>
+<div class="flex gap-8">
+<a class="text-slate-500 hover:text-white text-xs font-medium tracking-wider uppercase transition-colors" href="#">Terms</a>
+<span class="text-slate-800">|</span>
+<a class="text-slate-500 hover:text-white text-xs font-medium tracking-wider uppercase transition-colors" href="#">Privacy</a>
+</div>
+<div class="flex gap-4">
+<span class="text-[10px] text-slate-700 font-bold tracking-tighter">SEOUL // SYSTEM</span>
+</div>
+</div>
+</footer>
+</body></html>
