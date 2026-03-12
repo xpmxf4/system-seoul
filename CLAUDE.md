@@ -80,6 +80,7 @@
 9. **Footer 텍스트 변경**: © 2026 미네랄 → © 2026 mineral
 10. **GNB 비활성 링크 조정**: white/60 → white/50
 11. **Footer 텍스트 추가**: 모든 페이지에 "All Rights Reserved." 추가
+12. **Footer uppercase 제거**: mineral이 MINERAL로 대문자 표시되는 문제 해결 (`uppercase` 클래스 제거)
 
 ---
 
