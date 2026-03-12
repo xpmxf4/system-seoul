@@ -16,7 +16,7 @@
 - **배경**: 검정 (`#000000`)
 - **주요 색상 (Primary)**: 주황 (`#ec5b13`)
 - **GNB 링크 활성**: `#FFF` (white)
-- **GNB 링크 비활성**: `white/60` (60% opacity) hover 시 white
+- **GNB 링크 비활성**: `white/50` (50% opacity) hover 시 white
 
 ### GNB (Global Navigation Bar)
 - **구조**: 모든 페이지 동일
@@ -25,7 +25,7 @@
 - **링크 간격**: `gap-10`
 - **폰트**: `text-xs font-bold uppercase tracking-widest`
 - **활성 상태**: `text-white`
-- **비활성 상태**: `text-white/60 hover:text-white transition-colors`
+- **비활성 상태**: `text-white/50 hover:text-white transition-colors`
 - **좌우측 아이콘**: 없음 (제거됨)
 - **Border**: 없음 (`border-b-0`)
 
@@ -38,7 +38,7 @@
 - **VIDEO, TOUR 페이지**: 스크롤바 숨김 (`::-webkit-scrollbar { width: 0px; background: transparent; }`)
 
 ### Footer
-- **저작권 텍스트**: `© 2026 mineral`
+- **저작권 텍스트**: `© 2026 mineral. All Rights Reserved.`
 
 ---
 
@@ -78,6 +78,8 @@
 7. **HOME 로고 조정**: 1.4배 확대, 위치 위로 이동 (-mt-52), 플랫폼 아이콘 bottom-[10rem]
 8. **GNB 비활성 링크 밝기 조정**: `rgb(68 68 68 / 0.4)` → `white/60`
 9. **Footer 텍스트 변경**: © 2026 미네랄 → © 2026 mineral
+10. **GNB 비활성 링크 조정**: white/60 → white/50
+11. **Footer 텍스트 추가**: 모든 페이지에 "All Rights Reserved." 추가
 
 ---
 
