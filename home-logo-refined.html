@@ -46,19 +46,21 @@
 </head>
 <body class="font-display bg-background-dark text-slate-100 overflow-x-hidden">
 <!-- Sticky Navigation -->
-<nav class="fixed top-0 left-0 w-full z-50 border-b border-white/5 bg-black/80 backdrop-blur-md">
-<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-center">
-<div class="flex items-center gap-12">
-<a class="text-white text-xs font-black tracking-[0.2em] hover:text-primary transition-colors uppercase" href="home-logo-refined.html">Home</a>
-<a class="text-white text-xs font-black tracking-[0.2em] hover:text-primary transition-colors uppercase" href="video-dark-minimal.html">Video</a>
-<a class="text-white text-xs font-black tracking-[0.2em] hover:text-primary transition-colors uppercase" href="tour-dark-minimal.html">Tour</a>
-<a class="text-white text-xs font-black tracking-[0.2em] hover:text-primary transition-colors uppercase" href="#">Contact</a>
-<a class="text-white text-xs font-black tracking-[0.2em] hover:text-primary transition-colors uppercase" href="#">Social</a>
-</div>
-</div>
+<header class="sticky top-0 z-50 w-full border-b border-neutral-muted/30 sticky-nav">
+<div class="mx-auto flex h-16 max-w-[1200px] items-center justify-between px-6">
+<nav class="absolute left-1/2 flex -translate-x-1/2 items-center gap-10">
+<a class="text-xs font-bold uppercase tracking-widest text-primary" href="home-logo-refined.html">Home</a>
+<a class="text-xs font-bold uppercase tracking-widest text-neutral-muted/40 hover:text-primary transition-colors" href="video-dark-minimal.html">Video</a>
+<a class="text-xs font-bold uppercase tracking-widest text-neutral-muted/40 hover:text-primary transition-colors" href="tour-dark-minimal.html">Tour</a>
+<a class="text-xs font-bold uppercase tracking-widest text-neutral-muted/40 hover:text-primary transition-colors" href="#">Contact</a>
+<a class="text-xs font-bold uppercase tracking-widest text-neutral-muted/40 hover:text-primary transition-colors" href="#">Social</a>
 </nav>
+<div class="flex items-center">
+</div>
+</div>
+</header>
 <!-- Hero Section -->
-<main class="relative h-screen w-full flex flex-col items-center justify-center pt-20 px-4">
+<main class="relative h-screen w-full flex flex-col items-center justify-center pt-16 px-4">
 <!-- Background Asset (Subtle) -->
 <div class="relative z-10 flex flex-col items-center justify-center text-center -mt-24">
 <!-- Blue S Logo -->

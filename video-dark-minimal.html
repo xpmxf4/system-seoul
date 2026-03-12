@@ -52,27 +52,21 @@
 </head>
 <body class="bg-background-light dark:bg-background-dark font-display">
 <!-- Sticky Navigation -->
-<nav class="sticky top-0 z-50 bg-black/80 backdrop-blur-md border-b border-white/10 px-6 py-4">
-<div class="max-w-[1200px] mx-auto flex items-center justify-center relative">
-<div class="flex items-center gap-10">
-<a class="text-white/20 hover:text-white/60 text-xs font-bold tracking-widest uppercase transition-colors" href="home-logo-refined.html">Home</a>
-<a class="text-white nav-link-active text-xs font-bold tracking-widest uppercase transition-colors" href="video-dark-minimal.html">Video</a>
-<a class="text-white/20 hover:text-white/60 text-xs font-bold tracking-widest uppercase transition-colors" href="tour-dark-minimal.html">Tour</a>
-<a class="text-white/20 hover:text-white/60 text-xs font-bold tracking-widest uppercase transition-colors" href="#">Contact</a>
-<a class="text-white/20 hover:text-white/60 text-xs font-bold tracking-widest uppercase transition-colors" href="#">Social</a>
-</div>
-<div class="flex gap-4 absolute right-0">
-<button class="text-white/60 hover:text-white transition-colors">
-<span class="material-symbols-outlined text-[20px]">search</span>
-</button>
-<button class="text-white/60 hover:text-white transition-colors">
-<span class="material-symbols-outlined text-[20px]">menu</span>
-</button>
-</div>
-</div>
+<header class="sticky top-0 z-50 w-full border-b border-neutral-muted/30 sticky-nav">
+<div class="mx-auto flex h-16 max-w-[1200px] items-center justify-between px-6">
+<nav class="absolute left-1/2 flex -translate-x-1/2 items-center gap-10">
+<a class="text-xs font-bold uppercase tracking-widest text-neutral-muted/40 hover:text-primary transition-colors" href="home-logo-refined.html">Home</a>
+<a class="text-xs font-bold uppercase tracking-widest text-primary" href="video-dark-minimal.html">Video</a>
+<a class="text-xs font-bold uppercase tracking-widest text-neutral-muted/40 hover:text-primary transition-colors" href="tour-dark-minimal.html">Tour</a>
+<a class="text-xs font-bold uppercase tracking-widest text-neutral-muted/40 hover:text-primary transition-colors" href="#">Contact</a>
+<a class="text-xs font-bold uppercase tracking-widest text-neutral-muted/40 hover:text-primary transition-colors" href="#">Social</a>
 </nav>
+<div class="flex items-center">
+</div>
+</div>
+</header>
 <!-- Main Content -->
-<main class="flex flex-col items-center pt-20 pb-32 px-4">
+<main class="flex flex-col items-center pt-16 pb-32 px-4">
 <!-- Title Section -->
 <div class="mb-20 text-center">
 <h1 class="text-white text-7xl md:text-9xl font-black tracking-[ -0.05em] uppercase leading-none">
