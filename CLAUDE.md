@@ -39,6 +39,8 @@
 
 ### Footer
 - **저작권 텍스트**: `© 2026 mineral. All Rights Reserved.`
+- **Letter-spacing**: `tracking-[0.15em]`
+- **소셜 아이콘**: 모든 페이지 동일 (material-symbols-outlined, opacity-60 hover:opacity-100, gap-10)
 
 ---
 
@@ -81,6 +83,9 @@
 10. **GNB 비활성 링크 조정**: white/60 → white/50
 11. **Footer 텍스트 추가**: 모든 페이지에 "All Rights Reserved." 추가
 12. **Footer uppercase 제거**: mineral이 MINERAL로 대문자 표시되는 문제 해결 (`uppercase` 클래스 제거)
+13. **Footer letter-spacing 변경**: 0.5em → 0.15em (모든 페이지)
+14. **HOME footer opacity 제거**: flex gap-8 opacity-40 → flex gap-8
+15. **소셜 아이콘 통일**: VIDEO, TOUR 페이지의 footer를 HOME 페이지의 platform icons 스타일로 통일
 
 ---
 
