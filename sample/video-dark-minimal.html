@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<link rel="stylesheet" href="https://use.typekit.net/zwy6jmq.css">
+
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec5b13", // Theme requirement, though user requested no orange, I will use it sparingly or for logical overrides as per instructions to follow theme but user wants dark/minimal. I will prioritize the "Very dark, minimal" request.
+                        "background-light": "#000000",
+                        "background-dark": "#000000",
+                    },
+                    fontFamily: {
+                        "display": ["acumin-pro", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #000000;
+            color: #ffffff;
+        }
+        
+        ::-webkit-scrollbar {
+            width: 0px;
+            background: transparent;
+        }
+.video-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .nav-link-active {
+            position: relative;
+        }
+        .nav-link-active::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 4px;
+            height: 4px;
+            background-color: #3b82f6; /* Subtle blue indicator */
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<!-- Sticky Navigation -->
+<header class="sticky top-0 z-50 w-full border-b-0 sticky-nav">
+<div class="mx-auto flex h-16 max-w-[1200px] items-center justify-between px-6">
+<nav class="absolute left-1/2 flex -translate-x-1/2 items-center gap-10">
+<a class="text-xs font-bold uppercase tracking-widest text-white/50 hover:text-white transition-colors" href="home-logo-refined.html">Home</a>
+<a class="text-xs font-bold uppercase tracking-widest text-white" href="video-dark-minimal.html">Video</a>
+<a class="text-xs font-bold uppercase tracking-widest text-white/50 hover:text-white transition-colors" href="tour-dark-minimal.html">Tour</a>
+<a class="text-xs font-bold uppercase tracking-widest text-white/50 hover:text-white transition-colors" href="#">Contact</a>
+<a class="text-xs font-bold uppercase tracking-widest text-white/50 hover:text-white transition-colors" href="#">Social</a>
+</nav>
+<div class="flex items-center">
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex flex-col items-center pt-16 pb-32 px-4">
+<!-- Title Section -->
+<div class="mb-20 text-center">
+<h1 class="text-white text-7xl md:text-9xl font-black tracking-[ -0.05em] uppercase leading-none">
+                Video
+            </h1>
+</div>
+<!-- Video Stack -->
+<div class="flex flex-col gap-24 w-full video-container">
+<!-- Video 1 -->
+<div class="group">
+<div class="aspect-video w-full bg-neutral-900 rounded-lg overflow-hidden relative border border-white/5">
+<div class="absolute inset-0 flex items-center justify-center bg-black/40 group-hover:bg-black/20 transition-all cursor-pointer">
+<span class="material-symbols-outlined text-white text-6xl opacity-80">play_circle</span>
+</div>
+<img class="w-full h-full object-cover grayscale opacity-60" data-alt="Cinematic shot of neon lights in Seoul at night" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDR8gzw5IvkpgTvHGqe2nWQu2wMj2SzaJNBO782EzZr9XTMSWbTJuxT8_nNZ-mUjr9VZdJMr4gSpgC9aDWowPcrnAxC2OSY8VBHjnN9S61VQhjwi2eUiPlxRYcE9Kth6472oCEg4U-vwMC6NbmKYHSEudYpolgekP5GoJWEx6UgK4LK6EEBkfyadAmPIca5Ky_-wpOJ4YTBHYt948Y-bhItsz2Qtbsifty5NhPODXAMcWF-aPx32mE8VzLIaOQq05x4oFQfN4B88o9"/>
+</div>
+<div class="mt-4 flex flex-col items-center">
+<h3 class="text-white/40 text-[10px] font-bold tracking-[0.3em] uppercase">Collection 01: The Origin</h3>
+<p class="text-white/20 text-[9px] mt-1 font-medium tracking-widest uppercase">Directed by System Studio / 2024</p>
+</div>
+</div>
+<!-- Video 2 -->
+<div class="group">
+<div class="aspect-video w-full bg-neutral-900 rounded-lg overflow-hidden relative border border-white/5">
+<div class="absolute inset-0 flex items-center justify-center bg-black/40 group-hover:bg-black/20 transition-all cursor-pointer">
+<span class="material-symbols-outlined text-white text-6xl opacity-80">play_circle</span>
+</div>
+<img class="w-full h-full object-cover grayscale opacity-60" data-alt="Abstract silhouette of a dancer in a dark room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLQGFql8feRiWu24RsdsxSXN3VCMw4pZthAbcwo6Aozdty-uRoND2w5lxktbtIZFaeOVrZ22-5kV32242S4kW0Om2-qKJgp6325kYtfbA3u2pOHS1EniAb2-nUr4_Wu1UEIOBO8bw8YvwotOR9IVQR6X2AT3j2FLhE55LzF3Ou9S5RCkW9Pb9sJKjRgTO4QsFplT1CQCJvNpACFe2xsPThYSLD2GA8lK1GhM9oigmPoPpn2nq_sZ9g7Is3g2vEDwfRLDx4cB1-5Cxx"/>
+</div>
+<div class="mt-4 flex flex-col items-center">
+<h3 class="text-white/40 text-[10px] font-bold tracking-[0.3em] uppercase">System Seoul Live: Echoes</h3>
+<p class="text-white/20 text-[9px] mt-1 font-medium tracking-widest uppercase">Performance Visuals / 04:32</p>
+</div>
+</div>
+<!-- Video 3 -->
+<div class="group">
+<div class="aspect-video w-full bg-neutral-900 rounded-lg overflow-hidden relative border border-white/5">
+<div class="absolute inset-0 flex items-center justify-center bg-black/40 group-hover:bg-black/20 transition-all cursor-pointer">
+<span class="material-symbols-outlined text-white text-6xl opacity-80">play_circle</span>
+</div>
+<img class="w-full h-full object-cover grayscale opacity-60" data-alt="Monochrome stage lights through smoke and haze" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBD2wTKkJd2Ni50qyfxoJRKi9do7h_WhWJe5qWG3ChoIUP4CvDdDETx5VoTWVLet7OcSNHqmGYmh92MvaH0LmVOUCRDUJhv6mAvayjFvuzYRXbkxUBrMhEMuQ8Jr3V3Wgb2QY6ebbDD6D_aI_N21e-6OXdlhc9PMI04BL85Ey25GhLVOOEMPS16eeBricOdOOQReSqJtkGMEGnpKt-rR1g7m1RWAYY-BaEzJ1EvCWnw23JATYvK1hXDcSJT4XDaMFfn8ScY5JHh8DAt"/>
+</div>
+<div class="mt-4 flex flex-col items-center">
+<h3 class="text-white/40 text-[10px] font-bold tracking-[0.3em] uppercase">Documentary: No Signal</h3>
+<p class="text-white/20 text-[9px] mt-1 font-medium tracking-widest uppercase">Behind the scenes / 12:05</p>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer Streaming Icons -->
+<footer class="border-t border-white/5 py-8 flex flex-col items-center gap-6">
+<div class="flex items-center gap-10 opacity-60 hover:opacity-100 transition-opacity duration-500">
+<a class="group" href="#">
+<span class="material-symbols-outlined text-white text-2xl group-hover:text-primary transition-colors">play_circle</span>
+</a>
+<a class="group" href="#">
+<span class="material-symbols-outlined text-white text-2xl group-hover:text-primary transition-colors">camera_alt</span>
+</a>
+<a class="group" href="#">
+<span class="material-symbols-outlined text-white text-2xl group-hover:text-primary transition-colors">cloud</span>
+</a>
+<a class="group" href="#">
+<span class="material-symbols-outlined text-white text-2xl group-hover:text-primary transition-colors">podcasts</span>
+</a>
+<a class="group" href="#">
+<span class="material-symbols-outlined text-white text-2xl group-hover:text-primary transition-colors">music_note</span>
+</a>
+<a class="group" href="#">
+<span class="material-symbols-outlined text-white text-2xl group-hover:text-primary transition-colors">grid_view</span>
+</a>
+</div>
+<div class="text-[8px] text-white/10 tracking-[0.15em]">
+            © 2026 mineral. All Rights Reserved.
+        </div>
+</footer>
+</body></html>
