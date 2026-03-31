@@ -1,109 +1,22 @@
-# SYSTEM SEOUL Website - Project Notes
+# System Seoul 82 Project (D2C Platform)
 
-이 파일은 SYSTEM SEOUL 웹사이트 프로젝트의 작업 내역과 설정을 기록합니다.
+## 1. Project Vision & WHY
+* **목표:** 한국 언더그라운드 디지코어 크루 '시스템 서울 82'의 독자적인 D2C(Direct to Consumer) 웹 플랫폼 구축.
+* **배경:** 대형 플랫폼(유튜브, 멜론 등)의 알고리즘과 제재에서 벗어나, 아티스트가 직접 팬덤 데이터를 소유하고(Owned Audience) 소통하기 위함.
+* **디자인 무드:** [2hollis.life](https://www.2hollis.life/) 레퍼런스 참고. 다크하고 미니멀한 언더그라운드 감성. (단, 현재는 디자인보다 **백엔드/기능의 MVP(최소 기능 제품) 빠른 구현**이 클라이언트의 최우선 요구사항임).
 
----
+## 2. Core Business Logic (WHAT)
+이 프로젝트는 아래의 핵심 비즈니스 모듈이 완벽하게 동작해야 합니다.
+1. **Auth:** 팬들의 회원가입 및 로그인 (초기 MVP는 이메일/비밀번호 우선, 추후 소셜 로그인 확장 고려). 유저(팬)와 어드민(아티스트) 권한 분리.
+2. **Social Hub:** 사운드클라우드, 애플뮤직, 유튜브 등 외부 소셜/음원 링크 통합 라우팅.
+3. **Store (Drop):** 한정판 MD 상품 등록 및 드랍(오픈 일자 스케줄링) 기능. 카운트다운 후 판매 전환 기믹.
+4. **Video:** 자체 서버 호스팅 대신 유튜브 임베드(Iframe) 방식으로 비디오 아카이브 제공.
+5. **Tour:** 공연 일정 안내 및 외부 예매처(Yes24 등) 아웃링크 연결.
+6. **Admin Dashboard:** 클라이언트(아티스트)가 위 모든 콘텐츠(배경화면 교체 포함)를 직접 관리(CRUD)할 수 있는 백오피스.
 
-## 🎨 디자인 가이드라인
-
-### 폰트
-- **글로벌 폰트**: Acumin Pro (Adobe Fonts)
-- **Adobe Fonts CSS**: `https://use.typekit.net/zwy6jmq.css`
-- **font-family**: `"acumin-pro", sans-serif`
-- **가중치**: Regular (400), Bold (700)
-
-### 색상
-- **배경**: 검정 (`#000000`)
-- **주요 색상 (Primary)**: 주황 (`#ec5b13`)
-- **GNB 링크 활성**: `#FFF` (white)
-- **GNB 링크 비활성**: `white/50` (50% opacity) hover 시 white
-
-### GNB (Global Navigation Bar)
-- **구조**: 모든 페이지 동일
-- **클래스**: `sticky top-0 z-50 w-full border-b-0 sticky-nav`
-- **높이**: `h-16`
-- **링크 간격**: `gap-10`
-- **폰트**: `text-xs font-bold uppercase tracking-widest`
-- **활성 상태**: `text-white`
-- **비활성 상태**: `text-white/50 hover:text-white transition-colors`
-- **좌우측 아이콘**: 없음 (제거됨)
-- **Border**: 없음 (`border-b-0`)
-
-### 페이지별 GNB 활성 링크
-- **HOME**: Home 링크 활성
-- **VIDEO**: Video 링크 활성
-- **TOUR**: Tour 링크 활성
-
-### 스크롤바
-- **VIDEO, TOUR 페이지**: 스크롤바 숨김 (`::-webkit-scrollbar { width: 0px; background: transparent; }`)
-
-### Footer
-- **저작권 텍스트**: `© 2026 mineral. All Rights Reserved.`
-- **Letter-spacing**: `tracking-[0.15em]`
-- **소셜 아이콘**: 모든 페이지 동일 (material-symbols-outlined, opacity-60 hover:opacity-100, gap-10)
-
----
-
-## 📄 페이지 구조
-
-### HOME (home-logo-refined.html)
-- **로고 크기**: `w-[22.4rem] h-[22.4rem] md:w-[33.6rem] md:h-[33.6rem]` (1.4배 확대)
-- **메인 콘텐츠 위치**: `-mt-52`
-- **플랫폼 아이콘 위치**: `bottom-[10rem]`
-- **GNB 패딩**: `pt-16`
-
-### VIDEO (video-dark-minimal.html)
-- **GNB 패딩**: `pt-16`
-
-### TOUR (tour-dark-minimal.html)
-- **GNB 패딩**: `pt-16`
-
----
-
-## 🔧 배포 정보
-
-- **브랜치**: `gh-pages`
-- **배포 URL**: `https://xpmxf4.github.io/system-seoul/`
-- **원격 저장소**: `https://github.com/xpmxf4/system-seoul.git`
-
----
-
-## 📝 작업 내역
-
-### 2026-03-12
-1. **GNB 링크 수정**: 모든 페이지 간 링크 연결 확인
-2. **GNB 스타일 통일**: TOUR 페이지 스타일을 모든 페이지에 적용
-3. **GNB 아이콘 제거**: TOUR 좌측 person 버튼, VIDEO 우측 아이콘 제거
-4. **폰트 변경**: Public Sans → Plus Jakarta Sans → Acumin Pro
-5. **GNB border 색상**: `border-neutral-muted/30` → `border-black/80` → 제거 (`border-b-0`)
-6. **스크롤바 제거**: VIDEO, TOUR 페이지
-7. **HOME 로고 조정**: 1.4배 확대, 위치 위로 이동 (-mt-52), 플랫폼 아이콘 bottom-[10rem]
-8. **GNB 비활성 링크 밝기 조정**: `rgb(68 68 68 / 0.4)` → `white/60`
-9. **Footer 텍스트 변경**: © 2026 미네랄 → © 2026 mineral
-10. **GNB 비활성 링크 조정**: white/60 → white/50
-11. **Footer 텍스트 추가**: 모든 페이지에 "All Rights Reserved." 추가
-12. **Footer uppercase 제거**: mineral이 MINERAL로 대문자 표시되는 문제 해결 (`uppercase` 클래스 제거)
-13. **Footer letter-spacing 변경**: 0.5em → 0.15em (모든 페이지)
-14. **HOME footer opacity 제거**: flex gap-8 opacity-40 → flex gap-8
-15. **소셜 아이콘 통일**: VIDEO, TOUR 페이지의 footer를 HOME 페이지의 platform icons 스타일로 통일
-
----
-
-## 🔄 향후 작업시 참고사항
-
-1. **모든 페이지 변경 시 GNB 통일 유지**: 3개 페이지 모두 동일한 GNB 구조 유지
-2. **폰트 변경 시 Tailwind config와 CSS 동시 수정**: `font-display` 클래스와 inline style 모두 확인
-3. **Adobe Fonts**: Acumin Pro는 유료 폰트, Web Project ID: `zwy6jmq`
-4. **커밋 메시지**: 한글로 작성, 변경사항 명확히 기술
-5. **배포 후 강력 새로고침**: 브라우저 캐시 문제로 Ctrl+Shift+R (Cmd+Shift+R) 안내
-
----
-
-## 🚀 빠른 배포 명령어
-
-```bash
-# 변경사항 커밋 및 푸시
-git add -A
-git commit -m "메시지"
-git push origin gh-pages
-```
+## 3. Tech Stack & Rules (HOW)
+* **Backend:** Java, Spring Boot, Spring Security, JPA/Hibernate.
+* **Database:** RDBMS (MySQL 또는 PostgreSQL 사용).
+* **Authentication:** 세션 대신 무상태(Stateless) JWT 기반 인증 사용.
+* **Code Style:** - 코드는 명확하고 간결하게 작성하며, Controller/Service/Repository 레이어를 엄격히 분리할 것.
+  - 모든 API는 RESTful 원칙을 따르며 JSON 형태로 응답할 것.
